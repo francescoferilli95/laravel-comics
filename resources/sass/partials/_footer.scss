@@ -21,5 +21,13 @@ footer {
         border: 3px solid #107aeb;
         background: transparent;
         color: #fff;
+        cursor: pointer;
+        transition: scale .3s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    img {
+        cursor: pointer;
     }
 }
