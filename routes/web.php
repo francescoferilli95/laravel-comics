@@ -13,18 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// HOME
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
+// COMICS
 Route::get('/comics', function () {
-    return view('comics');
+
+    $comics = config('comics');
+    //dump($comics);
+
+    return view('comics', ['cards' => $comics]);
 })->name('comics');
 
+// NEWS
 Route::get('/news', function() {
     return view('news');
 })->name('news');
 
+// ABOUT
 Route::get('/about', function() {
     return view('about');
 })->name('about');

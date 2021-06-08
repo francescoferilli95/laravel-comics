@@ -5,9 +5,14 @@
 @section('content')
 <main class="content">
     <section class="container">
-        <h1>Homepage</h1>
-
-        <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique magni recusandae vero. Molestias, suscipit illum? Sequi ea perferendis doloribus aliquam officia fugit ipsa dignissimos, accusamus quia repellendus et exercitationem? Non!</p>
+        <div class="cards">
+            @foreach ($cards as $card)
+                <div class="card">
+                    <img src="{{ $card['image'] }}" alt="">
+                    <h3>{{ $card['title'] }}</h3>
+                </div>
+            @endforeach
+        </div>
     </section>
     <div class="blue"></div>
 </main>

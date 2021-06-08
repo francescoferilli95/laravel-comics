@@ -1,0 +1,12 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+        flex-basis: 20%;
+        margin: 0 1% 2rem;
+        img {
+            display: block;
+            margin-bottom: 1rem;
+        }
+    }
+}

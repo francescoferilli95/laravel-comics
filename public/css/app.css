@@ -106,3 +106,16 @@ footer .btn:hover {
 footer img {
   cursor: pointer;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .card {
+  flex-basis: 20%;
+  margin: 0 1% 2rem;
+}
+.cards .card img {
+  display: block;
+  margin-bottom: 1rem;
+}
